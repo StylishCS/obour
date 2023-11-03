@@ -14,7 +14,7 @@ var app = express();
 //database setup
 mongoose
   .connect(
-    "mongodb+srv://joeshirf:joo2330768@mern-stack-project.aiizvnr.mongodb.net/obour?retryWrites=true&w=majority",
+    process.env.MONGODB_URL,
     {
       family: 4,
       useNewUrlParser: true,
