@@ -20,7 +20,7 @@ mongoose
   })
   .then(() => console.log("Connected to MongoDB.."))
   .catch((err) => console.error("MongoDB Connection Failed..", err));
-mongoose.set("debug", true);
+//mongoose.set("debug", true);
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
