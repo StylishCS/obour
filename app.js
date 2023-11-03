@@ -13,11 +13,14 @@ var app = express();
 
 //database setup
 mongoose
-  .connect(process.env.MONGODB_URL, {
-    family: 4,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://joeshirf:joo2330768@mern-stack-project.aiizvnr.mongodb.net/obour?retryWrites=true&w=majority",
+    {
+      family: 4,
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => console.log("Connected to MongoDB.."))
   .catch((err) => console.error("MongoDB Connection Failed..", err));
 //mongoose.set("debug", true);
